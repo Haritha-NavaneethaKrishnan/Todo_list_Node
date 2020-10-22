@@ -44,6 +44,6 @@ res.render("list",{listTitle: "Work List",newTasks : workitems});
 
 });
 
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
 	console.log("Server runs at port 3000.")
 });
